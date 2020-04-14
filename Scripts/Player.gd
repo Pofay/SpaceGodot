@@ -4,8 +4,15 @@ extends KinematicBody2D
 export var playerSpeed = 800
 var velocity = Vector2()
 
+onready var Bullet = preload("res://Scenes/PlayerBullet.tscn")
+
 func _ready():
 	pass
+
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and event.pressed:
+			shoot()
 
 
 func get_input():
@@ -19,5 +26,11 @@ func get_input():
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+
+func shoot():
+	var b = Bullet.instance()
+	b.position.x += 100
+	b.rotation = $Sprite.rotation
+	add_child(b)
 
 

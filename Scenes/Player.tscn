@@ -7,13 +7,13 @@
 radius = 32.0398
 
 [node name="Player" type="KinematicBody2D"]
-rotation = 1.5708
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, 15.6443 )
+position = Vector2( -13.3641, -0.774596 )
+rotation = 1.5708
 scale = Vector2( 1, 0.857779 )
 texture = ExtResource( 1 )

@@ -5,7 +5,9 @@ extends KinematicBody2D
 export var bulletSpeed = 600
 var velocity = Vector2(bulletSpeed, 0)
 
+
 # Called when the node enters the scene tree for the first time.
+
 func _ready():
 	pass
 

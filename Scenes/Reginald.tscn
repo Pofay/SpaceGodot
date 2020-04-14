@@ -7,13 +7,13 @@
 radius = 45.8307
 
 [node name="Reginald" type="KinematicBody2D"]
-position = Vector2( 38, 384 )
-rotation = 1.5708
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 19.0299, -0.613855 )
+rotation = -1.5708
+scale = Vector2( 0.893968, 0.949774 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8.58658e-07, -19.6438 )
 shape = SubResource( 1 )

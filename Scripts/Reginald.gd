@@ -8,7 +8,5 @@ func _ready():
 
 
 func _on_ship_hit():
-	health -= 1
-	if(health == 0):
-		queue_free()
+	print("Was Hit")
 	pass

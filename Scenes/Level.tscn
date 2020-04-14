@@ -7,10 +7,9 @@
 [node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 34, 384 )
+position = Vector2( 169.429, 384 )
 
 [node name="EventSystem" parent="." instance=ExtResource( 3 )]
 
 [node name="Reginald" parent="." instance=ExtResource( 2 )]
-position = Vector2( 900, 384 )
-rotation = -1.5708
+position = Vector2( 655.61, 378.558 )
