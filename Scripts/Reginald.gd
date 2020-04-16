@@ -3,10 +3,13 @@ extends KinematicBody2D
 export var health = 1
 
 func _ready():
-	EventSystem.connect("enemy_ship_hit", self, "_on_ship_hit")
+	add_to_group("enemies")
 	pass
 
 
-func _on_ship_hit():
+func hit():
 	print("Was Hit")
+	health -= 1
+	if health == 0:
+		queue_free()
 	pass

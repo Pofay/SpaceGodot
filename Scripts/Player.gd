@@ -29,8 +29,9 @@ func _physics_process(_delta):
 
 func shoot():
 	var b = Bullet.instance()
-	b.position.x += 100
+	b.position = position
+	b.position.x += 70
 	b.rotation = $Sprite.rotation
-	add_child(b)
+	get_parent().add_child(b)
 
 
