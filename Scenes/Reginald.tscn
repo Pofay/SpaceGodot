@@ -4,16 +4,20 @@
 [ext_resource path="res://Scripts/Reginald.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 45.8307
+radius = 40.3576
 
 [node name="Reginald" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 19.0299, -0.613855 )
+position = Vector2( 16.5744, -5.99992e-05 )
 rotation = -1.5708
-scale = Vector2( 0.893968, 0.949774 )
+scale = Vector2( 0.893968, 0.899548 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.1
+autostart = true

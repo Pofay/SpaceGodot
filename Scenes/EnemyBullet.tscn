@@ -12,6 +12,7 @@ height = 33.1508
 [node name="Bullet" type="KinematicBody2D" parent="."]
 script = ExtResource( 2 )
 targetGroup = "player"
+velocity = Vector2( -600, 0 )
 
 [node name="Sprite" type="Sprite" parent="Bullet"]
 scale = Vector2( 1, 0.204845 )

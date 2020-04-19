@@ -2,9 +2,8 @@ extends KinematicBody2D
 
 # signal ship_hit
 
-export var bulletSpeed = 600
 export var targetGroup = "enemies"
-var velocity = Vector2(bulletSpeed, 0)
+export var velocity = Vector2(0, 0)
 
 # Called when the node enters the scene tree for the first time.
 
