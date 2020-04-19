@@ -7,6 +7,7 @@ var velocity = Vector2()
 onready var Bullet = preload("res://Scenes/PlayerBullet.tscn")
 
 func _ready():
+	add_to_group("player")
 	pass
 
 func _input(event):
