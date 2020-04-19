@@ -27,6 +27,10 @@ func hit():
 	pass
 
 func _on_timeout():
+	shoot()
+	pass
+
+func shoot():
 	var b = Bullet.instance()
 	b.position = position
 	b.position.x -= 70 

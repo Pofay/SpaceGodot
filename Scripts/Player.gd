@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 
 export var playerSpeed = 800
+export var health = 3
 var velocity = Vector2()
 
 onready var Bullet = preload("res://Scenes/PlayerBullet.tscn")
@@ -34,5 +35,12 @@ func shoot():
 	b.position.x += 50 
 	b.rotation = $Sprite.rotation
 	get_parent().add_child(b)
+
+func hit():
+	health -= 1
+	if health == 0:
+		queue_free()
+	pass
+
 
 
