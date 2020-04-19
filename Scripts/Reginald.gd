@@ -9,6 +9,7 @@ onready var Bullet = preload("res://Scenes/EnemyBullet.tscn")
 func _ready():
 	add_to_group("enemies")
 	$Timer.connect("timeout", self, "_on_timeout")
+	$Visibility.connect("screen_exited", self, "_on_exit")
 	pass
 
 func _physics_process(delta):
@@ -31,4 +32,9 @@ func _on_timeout():
 	b.position.x -= 70 
 	b.rotation = $Sprite.rotation
 	get_parent().add_child(b)
+	pass
+
+func _on_exit():
+	print("Exited Screen: Deleting..")
+	queue_free()
 	pass
