@@ -1,26 +1,28 @@
-extends KinematicBody2D
+extends Area2D
 
 # signal ship_hit
 
 export var targetGroup = "enemies"
-export var velocity = Vector2(0, 0)
-
+export var speed = 500
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
 	$Visibility.connect("screen_exited", self, "_on_exit")
+	self.connect("body_entered", self , "_on_body_entered")
 	pass
 
+	
 func _physics_process(delta):
-	var collision = move_and_collide(velocity * delta)
-	if collision:
-		var other = collision.collider
-		if other.is_in_group(targetGroup):
-			collision.collider.hit()
-			queue_free()
-	pass
+	var motion = Vector2(1, 0) * speed
+	position += motion * delta
 
 func _on_exit():
 	queue_free()
 	pass
+
+func _on_body_entered(body):
+	print("Bullet Hit")
+	queue_free()
+	pass
+
 

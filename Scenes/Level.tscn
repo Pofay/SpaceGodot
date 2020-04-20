@@ -6,7 +6,7 @@
 [node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 169.429, 384 )
+position = Vector2( 40, 384 )
 
 [node name="Reginald" parent="." instance=ExtResource( 2 )]
 position = Vector2( 666.493, 373.117 )
