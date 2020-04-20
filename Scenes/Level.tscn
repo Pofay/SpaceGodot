@@ -1,15 +1,11 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Reginald.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/FirstLevelSpawner.tscn" type="PackedScene" id=2]
 
 [node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 40, 384 )
 
-[node name="Reginald" parent="." instance=ExtResource( 2 )]
-position = Vector2( 666.493, 373.117 )
-
-[node name="Reginald2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 665.133, 245.242 )
+[node name="FirstLevelSpawner" parent="." instance=ExtResource( 2 )]

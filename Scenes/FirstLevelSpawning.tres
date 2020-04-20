@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/SpawningDetails.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+shipPath = "res://Scenes/Reginald.tscn"
+spawnPoints = [ Vector2( 980, 40 ), Vector2( 980, 146 ), Vector2( 980, 722 ), Vector2( 980, 677 ), Vector2( 980, 388 ) ]
