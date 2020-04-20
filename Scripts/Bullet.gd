@@ -21,7 +21,8 @@ func _on_exit():
 	pass
 
 func _on_body_entered(body):
-	print("Bullet Hit")
+	if body.is_in_group(targetGroup):
+		body.hit()
 	queue_free()
 	pass
 
