@@ -23,7 +23,7 @@ func _on_exit():
 func _on_body_entered(body):
 	if body.is_in_group(targetGroup):
 		body.hit()
-	queue_free()
+		queue_free()
 	pass
 
 
