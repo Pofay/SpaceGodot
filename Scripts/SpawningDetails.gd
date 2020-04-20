@@ -2,6 +2,5 @@ extends Resource
 class_name SpawningDetails
 
 
-export(Resource) var shipResource
+export(String) var shipPath 
 export(Array, Vector2) var spawnPoints
-export(int) var numberOfSpawns
