@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/player_shot.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Bullet.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/laser3.wav" type="AudioStream" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 12.6743
@@ -29,3 +30,7 @@ shape = SubResource( 1 )
 [node name="Visibility" type="VisibilityNotifier2D" parent="Bullet"]
 rotation = 1.5708
 scale = Vector2( 0.702801, 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bullet"]
+stream = ExtResource( 3 )
+autoplay = true

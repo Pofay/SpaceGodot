@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ShipDeath.wav-29b690e4ab658fde2999fa0682082860.sample"
+
+[deps]
+
+source_file="res://Sounds/ShipDeath.wav"
+dest_files=[ "res://.import/ShipDeath.wav-29b690e4ab658fde2999fa0682082860.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
