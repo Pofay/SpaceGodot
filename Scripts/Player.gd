@@ -39,6 +39,10 @@ func hit():
 	health -= 1
 	if health == 0:
 		EventSystem.emit_signal("shipDeath")
+		$Sprite.visible = false
+		$DeathAnimation.visible = true
+		$DeathAnimation.play("death")
+		yield(get_tree().create_timer(1.0), "timeout")
 		queue_free()
 	pass
 

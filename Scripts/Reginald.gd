@@ -24,6 +24,12 @@ func hit():
 	health -= 1
 	if health == 0:
 		EventSystem.emit_signal("shipDeath")
+		$CollisionShape2D.queue_free()
+		$Sprite.visible = false
+		$DeathAnimation.visible = true
+		$DeathAnimation.play("death")
+		$Timer.disconnect("timeout",self, "_on_timeout")
+		yield(get_tree().create_timer(1.0), "timeout")
 		queue_free()
 	pass
 
