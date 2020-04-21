@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/FirstLevelSpawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sounds/ShipDeath.wav" type="AudioStream" id=3]
+[ext_resource path="res://Scripts/AudioManager.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 548.465, 25.4208 )
@@ -24,3 +26,9 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds2"]
 position = Vector2( 471.139, 797.264 )
 shape = SubResource( 1 )
+
+[node name="AudioManager" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource( 3 )

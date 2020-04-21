@@ -23,6 +23,7 @@ func hit():
 	print("Was Hit")
 	health -= 1
 	if health == 0:
+		EventSystem.emit_signal("shipDeath")
 		queue_free()
 	pass
 
