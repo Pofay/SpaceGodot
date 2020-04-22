@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/PauseMenu.gd" type="Script" id=1]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="PauseMenu" type="CanvasLayer"]
 
 [node name="PauseMenu" type="Control" parent="."]
 pause_mode = 2
@@ -47,5 +47,8 @@ margin_right = 635.063
 margin_bottom = 482.039
 rect_pivot_offset = Vector2( -838.129, -259.226 )
 text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="PauseMenu/BlackOverlay/ResumeButton" to="PauseMenu" method="_on_ResumeButton_pressed"]
 [connection signal="pressed" from="PauseMenu/BlackOverlay/QuitButton" to="PauseMenu" method="_on_QuitButton_pressed"]

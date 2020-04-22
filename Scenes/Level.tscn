@@ -34,4 +34,4 @@ script = ExtResource( 4 )
 [node name="DeathSound" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 3 )
 
-[node name="CanvasLayer" parent="." instance=ExtResource( 5 )]
+[node name="PauseMenu" parent="." instance=ExtResource( 5 )]
