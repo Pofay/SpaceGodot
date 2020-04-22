@@ -1,35 +1,49 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="PauseMenu" type="Control"]
+[ext_resource path="res://Scripts/PauseMenu.gd" type="Script" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="PauseMenu" type="Control" parent="."]
+pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ResumeButton" type="Button" parent="."]
-margin_left = 359.894
-margin_top = 181.292
-margin_right = 629.894
-margin_bottom = 253.292
+[node name="BlackOverlay" type="ColorRect" parent="PauseMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/BlackOverlay"]
+margin_left = 362.478
+margin_top = 199.385
+margin_right = 632.478
+margin_bottom = 271.385
 rect_pivot_offset = Vector2( 217.725, 36 )
 text = "Resume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BackToMenuButton" type="Button" parent="."]
-margin_left = 358.601
-margin_top = 291.143
-margin_right = 628.601
-margin_bottom = 363.143
+[node name="BackToMenuButton" type="Button" parent="PauseMenu/BlackOverlay"]
+margin_left = 363.771
+margin_top = 297.604
+margin_right = 633.771
+margin_bottom = 369.604
 rect_pivot_offset = Vector2( -838.129, -259.226 )
 text = "Back to Main Menu"
 
-[node name="QuitButton" type="Button" parent="."]
-margin_left = 358.601
-margin_top = 404.87
-margin_right = 628.601
-margin_bottom = 476.87
+[node name="QuitButton" type="Button" parent="PauseMenu/BlackOverlay"]
+margin_left = 365.063
+margin_top = 410.039
+margin_right = 635.063
+margin_bottom = 482.039
 rect_pivot_offset = Vector2( -838.129, -259.226 )
 text = "Quit"
