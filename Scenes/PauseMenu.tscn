@@ -1,0 +1,35 @@
+[gd_scene format=2]
+
+[node name="PauseMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeButton" type="Button" parent="."]
+margin_left = 359.894
+margin_top = 181.292
+margin_right = 629.894
+margin_bottom = 253.292
+rect_pivot_offset = Vector2( 217.725, 36 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackToMenuButton" type="Button" parent="."]
+margin_left = 358.601
+margin_top = 291.143
+margin_right = 628.601
+margin_bottom = 363.143
+rect_pivot_offset = Vector2( -838.129, -259.226 )
+text = "Back to Main Menu"
+
+[node name="QuitButton" type="Button" parent="."]
+margin_left = 358.601
+margin_top = 404.87
+margin_right = 628.601
+margin_bottom = 476.87
+rect_pivot_offset = Vector2( -838.129, -259.226 )
+text = "Quit"
