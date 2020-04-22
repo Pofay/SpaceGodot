@@ -39,6 +39,9 @@ margin_right = 633.771
 margin_bottom = 369.604
 rect_pivot_offset = Vector2( -838.129, -259.226 )
 text = "Back to Main Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="QuitButton" type="Button" parent="PauseMenu/BlackOverlay"]
 margin_left = 365.063
@@ -51,4 +54,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="PauseMenu/BlackOverlay/ResumeButton" to="PauseMenu" method="_on_ResumeButton_pressed"]
+[connection signal="pressed" from="PauseMenu/BlackOverlay/BackToMenuButton" to="PauseMenu" method="_on_BackToMenuButton_pressed"]
 [connection signal="pressed" from="PauseMenu/BlackOverlay/QuitButton" to="PauseMenu" method="_on_QuitButton_pressed"]

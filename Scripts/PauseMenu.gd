@@ -15,3 +15,7 @@ func _on_ResumeButton_pressed():
 func _on_QuitButton_pressed():
 	get_tree().quit()
 
+
+func _on_BackToMenuButton_pressed():
+	get_tree().change_scene("res://Scenes/MainMenu.tscn")
+
