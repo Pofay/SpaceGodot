@@ -45,7 +45,7 @@ func hit():
 		$DeathAnimation.visible = true
 		$DeathAnimation.play("death")
 		yield(get_tree().create_timer(1.0), "timeout")
-		queue_free()
+		get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	pass
 
 
