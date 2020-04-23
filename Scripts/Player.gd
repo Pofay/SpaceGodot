@@ -7,6 +7,7 @@ var velocity = Vector2()
 
 onready var Bullet = preload("res://Scenes/PlayerBullet.tscn")
 
+
 func _ready():
 	add_to_group("player")
 	pass
@@ -37,6 +38,7 @@ func shoot():
 
 func hit():
 	health -= 1
+	EventSystem.emit_signal("health_changed", health)
 	if health == 0:
 		EventSystem.emit_signal("shipDeath")
 		$Sprite.visible = false

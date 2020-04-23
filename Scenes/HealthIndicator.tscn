@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/HealthIndicator.gd" type="Script" id=1]
+
+[node name="HealthIndicator" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.60706
+margin_top = 2.21606
+margin_right = 4.60706
+margin_bottom = 2.21606
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthLabel" type="Label" parent="."]
+margin_left = -4.22232
+margin_top = -2.35818
+margin_right = 96.7777
+margin_bottom = 41.6418
+text = "
+Ship Health:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthValue" type="Label" parent="."]
+margin_left = 86.2465
+margin_top = 14.5616
+margin_right = 117.246
+margin_bottom = 28.5616
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
