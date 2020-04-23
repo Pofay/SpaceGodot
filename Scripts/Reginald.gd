@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 export var health = 1
 export var shipSpeed = 25 
+export var scoreOnKill = 100
 var velocity = Vector2()
 onready var Bullet = preload("res://Scenes/EnemyBullet.tscn")
 
@@ -24,6 +25,7 @@ func hit():
 	health -= 1
 	if health == 0:
 		EventSystem.emit_signal("shipDeath")
+		EventSystem.emit_signal("award_score", scoreOnKill)
 		$CollisionShape2D.queue_free()
 		$Sprite.visible = false
 		$DeathAnimation.visible = true

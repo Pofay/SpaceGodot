@@ -5,7 +5,7 @@
 [ext_resource path="res://Sounds/ShipDeath.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scripts/AudioManager.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/PauseMenu.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/HealthIndicator.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Indicators.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 548.465, 25.4208 )
@@ -37,4 +37,4 @@ stream = ExtResource( 3 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 5 )]
 
-[node name="HealthIndicator" parent="." instance=ExtResource( 6 )]
+[node name="Indicators" parent="." instance=ExtResource( 6 )]

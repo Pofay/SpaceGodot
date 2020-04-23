@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scripts/HealthIndicator.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/InterfaceIndicator.gd" type="Script" id=1]
 
-[node name="HealthIndicator" type="Control"]
+[node name="Indicators" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.60706
@@ -31,6 +31,28 @@ margin_left = 86.2465
 margin_top = 14.5616
 margin_right = 117.246
 margin_bottom = 28.5616
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreLabel" type="Label" parent="."]
+margin_left = 45.6124
+margin_top = 38.2818
+margin_right = 85.6124
+margin_bottom = 52.2818
+text = "Score:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreValue" type="Label" parent="."]
+margin_left = 94.0
+margin_top = 37.8145
+margin_right = 108.0
+margin_bottom = 51.8145
 text = "0"
 align = 1
 __meta__ = {
